@@ -11,7 +11,7 @@
     ],
     "homepage": "http://github.com/Iliain/silverstripe-visualfields",
     "require": {
-        "php": "^7",
+        "php": "^7 || ^8",
         "silverstripe/framework": "^4.0"
     },
     "autoload": {
