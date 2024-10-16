@@ -14,8 +14,22 @@ Provides similar functionality to heyday/silverstripe-colorpalette, but uses ima
 ## Usage
 
 ```php
-$fields->addFieldToTab('Root.Main', VisualOptionField::create('BlockLayout', 'Layout', [
-    'layout-1' => '/_resources/app/client/images/layout/layout-1.png',
-    'layout-2' => '/_resources/app/client/images/layout/layout-2.png'
+$fields->addFieldToTab('Root.Main', $layoutField = VisualOptionField::create('BlockLayout', 'Layout', [
+    'layout-1' => $layoutFolderPath . '/layout-1.png',
+    'layout-2' => $layoutFolderPath . '/layout-2.png'
 ]));
 ```
+
+[![Visual Fields](docs/images/example-1.png)](docs/images/visualfields.png)
+
+## Customising
+
+You can customise the size and background colour of the images with the following options:
+
+```php
+$layoutField->setOptionWidth('250px');
+$layoutField->setOptionHeight('150px');
+$layoutField->setOptionBackgroundColour('#f0f0f0'); // Only visible if the image has transparency
+```
+
+[![Visual Fields](docs/images/example-2.png)](docs/images/visualfields.png)
