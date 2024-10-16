@@ -1,11 +1,11 @@
-# SilverStripe Visual Fields
+# Silverstripe Visual Fields
 [![Latest Stable Version](https://poser.pugx.org/iliain/silverstripe-visualfields/v)](https://packagist.org/packages/iliain/silverstripe-visualfields) 
 [![Total Downloads](https://poser.pugx.org/iliain/silverstripe-visualfields/downloads)](https://packagist.org/packages/iliain/silverstripe-visualfields) 
 [![Latest Unstable Version](https://poser.pugx.org/iliain/silverstripe-visualfields/v/unstable)](https://packagist.org/packages/iliain/silverstripe-visualfields) 
 [![License](https://poser.pugx.org/iliain/silverstripe-visualfields/license)](https://packagist.org/packages/iliain/silverstripe-visualfields) 
 [![PHP Version Require](https://poser.pugx.org/iliain/silverstripe-visualfields/require/php)](https://packagist.org/packages/iliain/silverstripe-visualfields)
 
-Provides similar functionality to heyday/silverstripe-colorpalette, but uses images rather than colours.
+Provides similar functionality to [heyday/silverstripe-colorpalette](https://github.com/WPP-Public/silverstripe-colorpalette), but uses images rather than colours.
 
 ## Installation (with composer)
 
