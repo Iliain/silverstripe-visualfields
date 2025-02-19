@@ -29,7 +29,7 @@ You can customise the size and background colour of the images with the followin
 ```php
 $layoutField->setOptionWidth('250px');
 $layoutField->setOptionHeight('150px');
-$layoutField->setOptionBackgroundColour('#f0f0f0'); // Only visible if the image has transparency
+$layoutField->setOptionBackground('#f0f0f0'); // Only visible if the image has transparency
 ```
 
 [![Visual Fields](docs/images/example-2.png)](docs/images/visualfields.png)
