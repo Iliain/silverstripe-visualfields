@@ -22,7 +22,7 @@ $fields->addFieldToTab('Root.Main', $typeField = VisualOptionField::create('Icon
 ]));
 ```
 
-[![Visual Fields](docs/images/example-1.png)](docs/images/visualfields.png)
+<img src="docs/images/example-1.png" width="500">
 
 ## Customising
 
@@ -34,4 +34,4 @@ $typeField->setOptionHeight('125px');
 $typeField->setOptionBackground('#efe6da'); // Only visible if the image has transparency
 ```
 
-[![Visual Fields](docs/images/example-2.png)](docs/images/visualfields.png)
+<img src="docs/images/example-2.png" width="500">
