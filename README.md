@@ -9,14 +9,16 @@ Provides similar functionality to [heyday/silverstripe-colorpalette](https://git
 
 ## Installation (with composer)
 
-	$ composer require iliain/silverstripe-visualfields
+	composer require iliain/silverstripe-visualfields
 
 ## Usage
 
 ```php
-$fields->addFieldToTab('Root.Main', $layoutField = VisualOptionField::create('BlockLayout', 'Layout', [
-    'layout-1' => $layoutFolderPath . '/layout-1.png',
-    'layout-2' => $layoutFolderPath . '/layout-2.png'
+$fields->addFieldToTab('Root.Main', $typeField = VisualOptionField::create('IconType', 'Type', [
+    'icon-1' => $iconFolderPath . '/icon-1.png',
+    'icon-2' => $iconFolderPath . '/icon-2.png',
+    'icon-3' => $iconFolderPath . '/icon-3.png',
+    'icon-4' => $iconFolderPath . '/icon-4.png',
 ]));
 ```
 
@@ -27,9 +29,9 @@ $fields->addFieldToTab('Root.Main', $layoutField = VisualOptionField::create('Bl
 You can customise the size and background colour of the images with the following options:
 
 ```php
-$layoutField->setOptionWidth('250px');
-$layoutField->setOptionHeight('150px');
-$layoutField->setOptionBackground('#f0f0f0'); // Only visible if the image has transparency
+$typeField->setOptionWidth('125px');
+$typeField->setOptionHeight('125px');
+$typeField->setOptionBackground('#efe6da'); // Only visible if the image has transparency
 ```
 
 [![Visual Fields](docs/images/example-2.png)](docs/images/visualfields.png)
