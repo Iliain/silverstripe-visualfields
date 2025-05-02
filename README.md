@@ -32,6 +32,7 @@ You can customise the size and background colour of the images with the followin
 $typeField->setOptionWidth('125px');
 $typeField->setOptionHeight('125px');
 $typeField->setOptionBackground('#efe6da'); // Only visible if the image has transparency
+$typeField->setBackgroundSize('cover');
 ```
 
 <img src="docs/images/example-2.png" width="500">

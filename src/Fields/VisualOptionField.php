@@ -17,6 +17,8 @@ class VisualOptionField extends OptionsetField
 
     private $optionBackground = '#fff';
 
+    private $backgroundSize = 'auto';
+
     /**
      * @param string $width
      * @return $this
@@ -51,6 +53,17 @@ class VisualOptionField extends OptionsetField
     }
 
     /**
+     * @param string $size
+     * @return $this
+     */
+    public function setBackgroundSize(string $size)
+    {
+        $this->backgroundSize = $size;
+
+        return $this;
+    }
+
+    /**
      * @param array $properties
      * @return DBHTMLText
      */
@@ -63,6 +76,7 @@ class VisualOptionField extends OptionsetField
                 width: {$this->optionWidth};
                 height: {$this->optionHeight};
                 background-color: {$this->optionBackground};
+                background-size: {$this->backgroundSize};
             }
         CSS);
 
