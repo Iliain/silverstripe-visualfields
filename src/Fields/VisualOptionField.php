@@ -31,14 +31,13 @@ class VisualOptionField extends OptionsetField
     }
 
     /**
-     * @param string $background
+     * Ease of access for setting the width
+     * @param string $width
      * @return $this
      */
-    public function setOptionBackground(string $background)
+    public function optionWidth(string $width)
     {
-        $this->optionBackground = $background;
-
-        return $this;
+        return $this->setOptionWidth($width);
     }
 
     /**
@@ -53,6 +52,37 @@ class VisualOptionField extends OptionsetField
     }
 
     /**
+     * Ease of access for setting the height
+     * @param string $height
+     * @return $this
+     */
+    public function optionHeight(string $height)
+    {
+        return $this->setOptionHeight($height);
+    }
+
+    /**
+     * @param string $background
+     * @return $this
+     */
+    public function setOptionBackground(string $background)
+    {
+        $this->optionBackground = $background;
+
+        return $this;
+    }
+
+    /**
+     * Ease of access for setting the background colour
+     * @param string $background
+     * @return $this
+     */
+    public function backgroundColour(string $background)
+    {
+        return $this->setOptionBackground($background);
+    }
+
+    /**
      * @param string $size
      * @return $this
      */
@@ -61,6 +91,16 @@ class VisualOptionField extends OptionsetField
         $this->backgroundSize = $size;
 
         return $this;
+    }
+
+    /**
+     * Ease of access for setting the background size
+     * @param string $size
+     * @return $this
+     */
+    public function imageSize(string $size)
+    {
+        return $this->setBackgroundSize($size);
     }
 
     /**
@@ -79,6 +119,18 @@ class VisualOptionField extends OptionsetField
                 background-size: {$this->backgroundSize};
             }
         CSS);
+
+        $customStyles = vsprintf(
+            'width: %s; height: %s; background-color: %s; background-size: %s;',
+            [
+                $this->optionWidth,
+                $this->optionHeight,
+                $this->optionBackground,
+                $this->backgroundSize,
+            ]
+        );
+
+        $properties['CustomStyles'] = $customStyles;
 
         return parent::Field($properties);
     }

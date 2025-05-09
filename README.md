@@ -29,10 +29,11 @@ $fields->addFieldToTab('Root.Main', $typeField = VisualOptionField::create('Icon
 You can customise the size and background colour of the images with the following options:
 
 ```php
-$typeField->setOptionWidth('125px');
-$typeField->setOptionHeight('125px');
-$typeField->setOptionBackground('#efe6da'); // Only visible if the image has transparency
-$typeField->setBackgroundSize('cover');
+$typeField
+    ->optionWidth('125px')
+    ->optionHeight('125px')
+    ->backgroundColour('#efe6da') // Only visible if the image has transparency
+    ->imageSize('cover');
 ```
 
 <img src="docs/images/example-2.png" width="500">
