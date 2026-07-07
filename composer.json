@@ -11,8 +11,8 @@
     ],
     "homepage": "http://github.com/Iliain/silverstripe-visualfields",
     "require": {
-        "php": "^7 || ^8",
-        "silverstripe/framework": "^4 || ^5 || ^6"
+        "php": "^8",
+        "silverstripe/framework": "^5 || ^6"
     },
     "autoload": {
         "psr-4": {
@@ -23,5 +23,11 @@
         "expose": [
             "client"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true
+        }
     }
 }
